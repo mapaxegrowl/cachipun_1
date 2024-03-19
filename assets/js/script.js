@@ -3,8 +3,8 @@ const PIEDRA = 0;
 const PAPEL = 1;
 const TIJERAS = 2;
 
-const GANA_HUMANO = "¡¡¡ Great !!!Eres el Campeón del cachipun.";
-const GANA_MAQUINA = "¡¡¡ Nooo !!!te han vencido.\nEliminado.";
+const GANA_JUGADOR = "¡¡¡ Great !!!Eres el Campeón del cachipun.";
+const GANA_COMPUTADOR = "¡¡¡ Nooo !!!\nte han vencido.\nEliminado.";
 const EMPATE = "¡¡¡ EMPATADO !!! Intentalo otra vez. ";
 
 var juegos = 0; // Cantidad de juegos de cachipun
@@ -31,23 +31,23 @@ while (juegos > 0) {
         switch (jugada_jugador) {
             case PIEDRA:
                 if (jugada_computador == PAPEL) {
-                    alert(GANA_MAQUINA);
+                    alert(GANA_COMPUTADOR);
                 } else {
-                    alert(GANA_HUMANO);
+                    alert(GANA_JUGADOR);
                 }
                 break;
             case PAPEL:
                 if (jugada_computador == TIJERAS) {
-                    alert(GANA_MAQUINA);
+                    alert(GANA_COMPUTADOR);
                 } else {
-                    alert(GANA_HUMANO);
+                    alert(GANA_JUGADOR);
                 }
                 break;
             case TIJERAS:
                 if (jugada_computador == PIEDRA) {
-                    alert(GANA_MAQUINA);
+                    alert(GANA_COMPUTADOR);
                 } else {
-                    alert(GANA_HUMANO);
+                    alert(GANA_JUGADOR);
                 }
                 break;
         }
