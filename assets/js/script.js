@@ -1,6 +1,4 @@
-// Desafío - Cachipun
-
-// Definición de variables y constantes
+// variables y constantes
 const PIEDRA = 0;
 const PAPEL = 1;
 const TIJERAS = 2;
